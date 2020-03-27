@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'trip_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MaterialApp(
@@ -73,7 +74,7 @@ class LoginPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 15),
                     Text('take full advantage of this app by loggin in...',
                     style: TextStyle(
                       color: Colors.grey[400]
@@ -93,8 +94,10 @@ class LoginPage extends StatelessWidget {
                           FlatButton(
                           color: Color.fromRGBO(41, 52, 93 , 1),
                           padding: EdgeInsets.fromLTRB(80,15,80,20),
-                        onPressed: () {}, 
-                          child: Text('Sign-up',
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => DestinationPage()));
+                        }, 
+                          child: Text('Log in',
                           style: TextStyle(
                             color: Colors.white
                           ),)),
