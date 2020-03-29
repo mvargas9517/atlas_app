@@ -64,7 +64,7 @@ class LoginPage extends StatelessWidget {
                     SizedBox(height: 20),
                     Container(
                       color: Colors.blueGrey[500].withOpacity(0.8),
-                      height: _height * 0.07,
+                      height: _height * 0.065,
                       width: _width * 0.8,
                       child: TextField(
                         decoration: InputDecoration(
