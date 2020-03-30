@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MaterialApp(
   home: DestinationPage()));
@@ -106,7 +107,9 @@ class _DestinationPageState extends State<DestinationPage>
                                   children: <Widget>[
                                     Icon(MaterialCommunityIcons.airplane_takeoff, size: 15,),
                                     SizedBox(width: 5),
-                                    Text('FLIGHTS',style: TextStyle(fontSize: 12)),
+                                    Text('FLIGHTS',style: GoogleFonts.titilliumWeb(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600)),
                                   ],
                                 ),
                               ],
@@ -121,7 +124,9 @@ class _DestinationPageState extends State<DestinationPage>
                                   children: <Widget>[
                                     Icon(MaterialCommunityIcons.hotel, size: 15,),
                                     SizedBox(width: 12),
-                                    Text('HOTELS',style: TextStyle(fontSize: 12)),
+                                    Text('HOTELS',style: GoogleFonts.titilliumWeb(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600)),
                                   ],
                                 ),
                               ],
@@ -136,7 +141,9 @@ class _DestinationPageState extends State<DestinationPage>
                                   children: <Widget>[
                                     Icon(MaterialCommunityIcons.car, size: 15,),
                                     SizedBox(width: 5),
-                                    Text('CARS',style: TextStyle(fontSize: 12)),
+                                    Text('CARS',style: GoogleFonts.titilliumWeb(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600)),
                                   ],
                                 ),
                               ],
@@ -168,26 +175,25 @@ class _DestinationPageState extends State<DestinationPage>
                           Text('My trip in',
                           style: TextStyle(
                             fontSize: 20,
-                            color: Colors.white,
+                            color: Colors.white70,
                             fontWeight: FontWeight.w300
                            ),
                           ),
                           Text('Dubai, Emirates',
-                      style: TextStyle(
+                      style: GoogleFonts.titilliumWeb(
                         fontSize: 25,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold
                        ),
                       ),
                       SizedBox(height: 10,),
                           Text('PARTICIPANTS',
                               style: TextStyle(
                                 fontSize: 12,
-                                color: Colors.white,
+                                color: Colors.white70,
                                 fontWeight: FontWeight.w400
                                ),
                               ),
-                               SizedBox(height: 5,),
+                               SizedBox(height: 8,),
                               Container(
                                 width: _width * 0.27,
                                 child: Stack(
@@ -220,7 +226,7 @@ class _DestinationPageState extends State<DestinationPage>
                           Container(
                             height: _height * 0.16,
                             width: _width,
-                            color: Color.fromRGBO(41, 52, 93 , 0.7),
+                            color: Color.fromRGBO(41, 52, 93 , 0.9),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
@@ -316,7 +322,7 @@ class _DestinationPageState extends State<DestinationPage>
                           Container(
                             height: _height * 0.16,
                             width: _width,
-                            color: Color.fromRGBO(41, 52, 93 , 0.7),
+                            color: Color.fromRGBO(41, 52, 93 , 0.9),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
@@ -378,8 +384,8 @@ class _DestinationPageState extends State<DestinationPage>
                                         letterSpacing: 1,
                                       ),),
                                       SizedBox(width:  _width* 0.05,),
-                                      Icon(Icons.keyboard_arrow_down,
-                                      color: Colors.white,),
+                                      Icon(Icons.keyboard_arrow_up,
+                                      color: Colors.white.withOpacity(0.3),),
                                     ],
                                   ),
                                 ),
@@ -429,7 +435,7 @@ class _DestinationPageState extends State<DestinationPage>
                            color: Colors.white.withOpacity(0.2),
                           ),
                          ),
-                         SizedBox(width: _width * 0.02),
+                         SizedBox(width: _width * 0.03),
                          Padding(
                            padding: const EdgeInsets.only(bottom: 5.0),
                            child: Icon(MaterialCommunityIcons.check_bold, size: 20, color: Colors.greenAccent[400],),
@@ -459,7 +465,7 @@ class _DestinationPageState extends State<DestinationPage>
                            color: Colors.white.withOpacity(0.2),
                           ),
                          ),
-                         SizedBox(width: _width * 0.02),
+                         SizedBox(width: _width * 0.03),
                          Padding(
                            padding: const EdgeInsets.only(bottom: 5.0),
                            child: Icon(MaterialCommunityIcons.check_bold, size: 20, color: Colors.greenAccent[400]),

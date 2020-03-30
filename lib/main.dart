@@ -26,7 +26,7 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.only(top: 50.0),
+                    padding: const EdgeInsets.only(top: 70.0),
                     child: Column(
                       children: <Widget>[
                         Text('Atlas',
@@ -57,27 +57,29 @@ class LoginPage extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Text('Find your trip together\n  and let you guide...',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white
+                    style: GoogleFonts.titilliumWeb(
+                      fontSize: 25,
+                      color: Colors.white,
+                      letterSpacing: 1
                     ),),
                     SizedBox(height: 20),
                     Container(
-                      color: Colors.blueGrey[500].withOpacity(0.8),
-                      height: _height * 0.065,
+                      color: Colors.blueGrey[800].withOpacity(0.8),
+                      height: _height * 0.064,
                       width: _width * 0.8,
                       child: TextField(
                         decoration: InputDecoration(
-                          prefixIcon: Icon(Icons.search, color: Colors.grey[400],),
-                          hintText: 'Where?', hintStyle: TextStyle(color: Colors.grey[400]),
-                          suffixIcon: Icon(Icons.mic, color: Colors.grey[400],)
+                          prefixIcon: Icon(Icons.search, color: Colors.white.withOpacity(0.7),),
+                          hintText: 'Where?', hintStyle: TextStyle(color: Colors.white.withOpacity(0.7)),
+                          suffixIcon: Icon(Icons.mic, color: Colors.white.withOpacity(0.7),)
                         ),
                       ),
                     ),
                     SizedBox(height: 15),
-                    Text('take full advantage of this app by loggin in...',
-                    style: TextStyle(
-                      color: Colors.grey[400]
+                    Text('take full advantage of this app by logging in...',
+                    style: GoogleFonts.titilliumWeb(
+                      color: Colors.grey[400],
+                      letterSpacing: 0.4
                     ),
                     ),
                     SizedBox(height: 10),
@@ -85,21 +87,23 @@ class LoginPage extends StatelessWidget {
                       children: <Widget>[
                         FlatButton(
                           color: Color.fromRGBO(41, 52, 93 , 1),
-                          padding: EdgeInsets.fromLTRB(80,15,80,20),
+                          padding: EdgeInsets.fromLTRB(70,15,75,20),
                         onPressed: () {}, 
                           child: Text('Sign-up',
-                          style: TextStyle(
-                            color: Colors.white
+                          style: GoogleFonts.titilliumWeb(
+                            color: Colors.white,
+                            fontSize: 20
                           ),)),
                           FlatButton(
                           color: Color.fromRGBO(41, 52, 93 , 1),
-                          padding: EdgeInsets.fromLTRB(80,15,80,20),
+                          padding: EdgeInsets.fromLTRB(70,15,75,20),
                         onPressed: () {
                           Navigator.push(context, MaterialPageRoute(builder: (context) => DestinationPage()));
                         }, 
                           child: Text('Log in',
-                          style: TextStyle(
-                            color: Colors.white
+                          style: GoogleFonts.titilliumWeb(
+                            color: Colors.white,
+                            fontSize: 20
                           ),)),
                       ],
                     ),
